@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50BDE556-4A7A-4962-BDDD-06E3EC98224E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SwarajInsurancePortalDA</RootNamespace>
+    <AssemblyName>SwarajInsurancePortalDA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\SwarajInsurancePortal\ReferencesDLL\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Common\CollectionHelper.cs" />
+    <Compile Include="Common\CommonFunctionDA.cs" />
+    <Compile Include="Common\Connect.cs" />
+    <Compile Include="Common\DbConstant.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Dealer\ClaimsListingDA.cs" />
+    <Compile Include="Repository\Dealer\CreateClaimDA.cs" />
+    <Compile Include="Repository\Dealer\DashboardDA.cs" />
+    <Compile Include="Repository\Dealer\DocumentUploadsDA.cs" />
+    <Compile Include="Repository\Dealer\ManpowerListingDA.cs" />
+    <Compile Include="Repository\HO\HODashboardDA.cs" />
+    <Compile Include="Repository\HO\HOClaimsDetailsDA.cs" />
+    <Compile Include="Repository\HO\HOClaimsListingDA.cs" />
+    <Compile Include="Repository\IFFCO\CompanyDashboardDA.cs" />
+    <Compile Include="Repository\IFFCO\ViewRemindersDA.cs" />
+    <Compile Include="Repository\IFFCO\ReminderListingDA.cs" />
+    <Compile Include="Repository\IFFCO\CompanyClaimsListingDA.cs" />
+    <Compile Include="Repository\IFFCO\CompanyClaimsDetailsDA.cs" />
+    <Compile Include="Repository\Login\LoginDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SwarajInsurancePortalBO\SwarajInsurancePortalBO.csproj">
+      <Project>{7277b232-daf0-4c32-ac4b-4d87e2f31188}</Project>
+      <Name>SwarajInsurancePortalBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

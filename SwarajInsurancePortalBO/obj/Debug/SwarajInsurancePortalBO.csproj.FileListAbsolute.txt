@@ -1,0 +1,6 @@
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\bin\Debug\SwarajInsurancePortalBO.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\bin\Debug\SwarajInsurancePortalBO.pdb
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\obj\Debug\SwarajInsurancePortalBO.csprojAssemblyReference.cache
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\obj\Debug\SwarajInsurancePortalBO.csproj.CoreCompileInputs.cache
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\obj\Debug\SwarajInsurancePortalBO.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBO\obj\Debug\SwarajInsurancePortalBO.pdb

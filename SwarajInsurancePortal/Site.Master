@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SwarajInsurancePortal.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dealer Insurance Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<%=_SitePath%>Content/css/style.css" rel="stylesheet" />
+    <link href="<%=_SitePath%>Content/css/developer.css" rel="stylesheet" />
+    <link href="<%=_SitePath%>Content/validationEngine.jquery.css" rel="stylesheet" />
+    <link href="<%=_SitePath%>Scripts/toastr/toastr.css" rel="stylesheet" />
+    <link href="<%=_SitePath%>Content/pstyle.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .error {
+            color: red
+        }
+    </style>
+    <!--[if lt IE 9]>   
+        <link href="../Content/css/ie8.css" rel="stylesheet" />
+	<![endif]-->
+    <script src="<%=_SitePath%>Scripts/jquery-3.3.1.min.js"></script>
+    <script src="<%=_SitePath%>Scripts/js/tabs.js"></script>
+    <script src="<%=_SitePath%>Scripts/js/html5shiv.min.js"></script>
+    <script src="<%=_SitePath%>Scripts/js/respond.js"></script>
+    <script src="<%=_SitePath%>Scripts/Plugin/jquery.validationEngine-en.js"></script>
+    <script src="<%=_SitePath%>Scripts/Plugin/jquery.validationEngine.js"></script>
+
+    <script src="<%=_SitePath%>Scripts/toastr/toastr.js"></script>
+    <script src="<%=_SitePath%>Scripts/Plugin/jquery.paginate.js"></script>
+    <script src="<%=_SitePath%>Scripts/Custom/Master.js"></script>
+    <script src="<%=_SitePath%>Scripts/Custom/Login/Login.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var SitePath = $("#hdnSitePath").val();
+            var UserId = '<%= Session["UserId"] %>'
+            var RoleId = '<%= Session["RoleId"] %>'
+            var Name = '<%= Session["Name"] %>'
+            var RoleName = '<%= Session["RoleName"] %>'
+            var DealerCode = '<%= Session["DealerCode"] %>'
+
+            $("#spnUsername").html(Name);
+
+
+            if (RoleId == 1) {
+
+                $("#ulDealer").show();
+                $("#ulHO").hide();
+                $("#ulIffco").hide();
+            }
+            else if (RoleId == 2) {
+                $("#ulDealer").hide();
+                $("#ulHO").show();
+                $("#ulIffco").hide();
+            }
+            else {
+                $("#ulDealer").hide();
+                $("#ulHO").hide();
+                $("#ulIffco").show();
+            }
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <input type="hidden" id="hdnSitePath" runat="server" clientidmode="static" />
+    <form id="form1" runat="server">
+        <style type="text/css">
+            .login-bg {
+                -ms-behavior: url(backgroundsize.min.htc);
+            }
+        </style>
+        <div class="wrapper login-bg login-bg2">
+            <div class="ajax-loader">
+                <img src="<%=_SitePath%>images/ajax-loading.gif" class="img-responsive" />
+            </div>
+            <div class="header login-header">
+                <div class="s-container">
+                    <div class="logo login-logo">
+                        <a href="#">
+                            <img src="<%=_SitePath%>images/logo.png" alt="company-logo" title="company-logo" /></a>
+                    </div>
+                    <span class="center-header login-logo">Dealer Insurance Portal</span>
+                    <span class="center-header login-logo"></span>
+                    <div class="logout">
+                        <label>welcome <span id="spnUsername"></span></label>
+                        <input value="change password" id="btnChangePassword" style="display: none;" class="hover-blue" type="button">
+                        <input value="logout" id="btnLogout" class="hover-blue" type="button">
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+            <!-- Header Ends -->
+
+            <div class="main-content">
+                <div class="s-container">
+                    <div class="content-inner">
+                        <div class="user--dashboard">
+                            <div class="setting-top">
+                                <div class="setting-menu setting-menu2 setting-menu-CFM">
+                                    <ul class="tab" id="ulDealer" style="display: none;">
+
+                                        <%--DEALER START--%>
+
+                                        <li class="reports-drp">
+                                            <a onclick="openCity(event, 'dashboard')" class="tablinks ancDashboard" href="<%=_SitePath%>Views/Dealer/Dashboard.aspx">Dashboard</a>
+                                        </li>
+
+                                        <li>
+                                            <a onclick="openCity(event, 'manpower')" class="tablinks ancManpower" href="<%=_SitePath%>Views/Dealer/ManpowerListing.aspx">Manpower List</a>
+                                        </li>
+                                        <li id="claims" class="reports-drp clsDealerTabs">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancClaims" href="<%=_SitePath%>Views/Dealer/ClaimsListing.aspx">Claims</a>
+                                        </li>
+                                        <li id="rejectedDealer" class="reports-drp clsDealerTabs">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancRejectedClaims" href="<%=_SitePath%>Views/Dealer/ClaimsListing.aspx">Rejected</a>
+                                        </li>
+                                    </ul>
+                                    <%--DEALER END--%>
+
+                                    <%--HO START--%>
+                                    <ul class="tab" id="ulHO" style="display: none;">
+
+                                        <li class="reports-drp">
+                                            <a onclick="openCity(event, 'dashboard')" class="tablinks ancDashboard" href="<%=_SitePath%>Views/HO/HODashboard.aspx">Dashboard</a>
+                                        </li>
+                                        <li id="HOClaims" class="reports-drp clstabHO ">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancHOClaims active" href="<%=_SitePath%>Views/HO/HOClaimsListing.aspx">Claims</a>
+                                        </li>
+                                        <li id="rejectedHO" class="reports-drp clstabHO">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancRejectedHOClaims" href="<%=_SitePath%>Views/HO/HOClaimsListing.aspx">Rejected</a>
+                                        </li>
+                                    </ul>
+                                    <%--HO END--%>
+                                    <%--IFFCO START--%>
+                                    <ul class="tab" id="ulIffco" style="display: none;">
+                                        <li class="reports-drp">
+                                            <a onclick="openCity(event, 'dashboard')" class="tablinks ancDashboard" href="<%=_SitePath%>Views/IFFCO/IFFCODashboard.aspx">Dashboard</a>
+                                        </li>
+                                        <li id="pending" class="reports-drp1 clsTabsLink">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks anPendingClaims" href="<%=_SitePath%>Views/IFFCO/CompanyClaimsListing.aspx">Pending</a>
+                                        </li>
+                                        <%--  <li id="claimed" class="reports-drp1 clsTabsLink" >
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancDoneClaims" href="<%=_SitePath%>Views/IFFCO/CompanyClaimsListing.aspx">Submitted</a>
+                                        </li>--%>
+                                        <li id="tracked" class="reports-drp1 clsTabsLink">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancTrackedClaims" href="<%=_SitePath%>Views/IFFCO/CompanyClaimsListing.aspx">Tracked</a>
+                                        </li>
+                                        <%-- <li id="rejectedCompany" class="reports-drp1 clsTabsLink">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancRejectedCompClaims" href="<%=_SitePath%>Views/IFFCO/CompanyClaimsListing.aspx">Rejected</a>
+                                        </li>--%>
+                                        <li class="reports-drp1">
+                                            <a onclick="openCity(event, 'Claims')" class="tablinks ancReminderClaims" href="<%=_SitePath%>Views/IFFCO/ReminderListing.aspx">Reminders</a>
+                                        </li>
+                                    </ul>
+                                    <%--IFFCO END--%>
+                                </div>
+                            </div>
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container Ends -->
+                <div class="footer">
+                    <div class="s-container">
+                        <p>&copy; 2019  Swaraj. All rights reserved.</p>
+                    </div>
+                    <!-- Container Ends -->
+                </div>
+                <!-- Footer Ends -->
+            </div>
+            <!-- Main Content Ends -->
+
+
+            <div class="mahindra-pin">
+                <img src="<%=_SitePath%>images/mahindra_rise.png" alt="" />
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

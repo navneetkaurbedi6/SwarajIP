@@ -1,0 +1,61 @@
+.header{border-bottom: 1px solid #ccc;}
+.top-tabs{margin-top:-2px;}
+.digital-sop-select{width:23% ;}
+#file-upload-cont{background:none;color:transparent !important;}
+#file-upload-cont > INPUT[type='file']{width:76% !important;}
+.form-left-box select, .form-right-box select{background-image:none !important;}
+#my-button{display:none;}
+.form-left-box select, .form-right-box select{background:none;}
+.setting-menu.setting-menu2 ul.tab {border:3px solid #dddddd !important;}
+.landing-page-grids li {
+background-color: #fff;border:1px solid #8F8F8F;
+}
+.img-left > p{top:100px;left:0;}
+.asset-outer{width:940px;margin:5% 0 0 0; }
+/*RESPONSIVE CSS START*/
+
+@media(max-width:1199px){
+	.s-container{padding:0 10px;}
+	.mahindra-pin{width:350px; height:84px;} 
+	.mahindra-pin img{width: 100%;}
+}
+	
+@media(max-width:767px){
+	.digital-sop-select{width:100% !important;}
+	.home-btn {
+ 
+    padding: 40px 0 0;}
+
+	.s-container{padding:0 10px;}
+	.mahindra-pin{width:260px; height:64px;}
+	.logo{width:100%;}
+	.form_list.renewal_form {
+    border-right: none;
+    padding: 0;
+    width: 100%;
+	}
+.logout {float: none;text-align: center;}
+.form-left-box.btn_bottom2 { width: 61%;}
+.form-left-box.btn_bottom{width: 34%;}
+.form-left-box input[type="button"]{  padding: 12px 0;font-size: 13px;}
+.add_btns input[type="button"]{padding: 12px 13px;}
+.form-left-box,.form-right-box {width: 100%;}
+.form_list{width:100%;}
+.form_list.renewal_form:last-child { border: medium none;float: left;padding: 0;}
+.mahindra-pin img{width: 100%;}
+.search-outer li{ width:50%;}
+ul.job-detail li h3{ font-size: 18px;}
+ul.job-detail li ul li{ width:100%; border-right:0; line-height:20px; padding:0}
+.job-filter-row{ float: left; margin: 0 1%; width: 47.5%;}
+.signup-dob label{ width: 13%; margin-right:0;}
+.signup-section ul li:nth-child(3){ width:100%;}
+.signup-section ul li:nth-child(4){ width:100%;}
+.setting-menu.setting-menu2 ul li{ width:100%;}
+.logo,.logo-right{display: inline-block; float: none;  margin: 0px 0;}
+.center-header{ margin: 15px 0; width: 100%;}
+}
+@media(max-width:639px){
+
+.mahindra-pin{display: none;}
+ }
+ 

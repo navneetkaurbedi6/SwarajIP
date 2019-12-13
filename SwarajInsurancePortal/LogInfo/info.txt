@@ -1,0 +1,45 @@
+=====Error Log ==
+===Start===3/8/2019 5:43:24 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 36
+===End=== 3/8/2019 5:43:24 PM
+
+
+=====Error Log ==
+===Start===3/8/2019 5:43:24 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 45
+   at SwarajInsurancePortalBL.Services.HO.HOClaimDetailsBL.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\Services\HO\HOClaimDetailsBL.cs:line 26
+===End=== 3/8/2019 5:43:24 PM
+
+
+=====Error Log ==
+===Start===3/8/2019 5:45:25 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 36
+===End=== 3/8/2019 5:45:25 PM
+
+
+=====Error Log ==
+===Start===3/8/2019 5:45:25 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 45
+   at SwarajInsurancePortalBL.Services.HO.HOClaimDetailsBL.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\Services\HO\HOClaimDetailsBL.cs:line 26
+===End=== 3/8/2019 5:45:25 PM
+
+
+=====Error Log ==
+===Start===3/8/2019 5:47:24 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 36
+===End=== 3/8/2019 5:47:24 PM
+
+
+=====Error Log ==
+===Start===3/8/2019 5:47:25 PM
+Error Message : Index was outside the bounds of the array.
+Stack Trace :    at SwarajInsurancePortalDA.Repository.HO.HOClaimsDetailsDA.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalDA\Repository\HO\HOClaimsDetailsDA.cs:line 45
+   at SwarajInsurancePortalBL.Services.HO.HOClaimDetailsBL.RejectClaimByHO(Int32 claimId, List`1 HORemarksListing, String Reason) in D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\Services\HO\HOClaimDetailsBL.cs:line 26
+===End=== 3/8/2019 5:47:25 PM
+
+

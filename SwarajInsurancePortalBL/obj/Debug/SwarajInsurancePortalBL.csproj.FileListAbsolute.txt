@@ -1,0 +1,12 @@
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalBL.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalBL.pdb
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalBO.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalDA.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalBO.pdb
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\bin\Debug\SwarajInsurancePortalDA.pdb
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\obj\Debug\SwarajInsurancePortalBL.csprojAssemblyReference.cache
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\obj\Debug\SwarajInsurancePortalBL.csproj.CoreCompileInputs.cache
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\obj\Debug\SwarajInsurancePortalBL.csproj.CopyComplete
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\obj\Debug\SwarajInsurancePortalBL.dll
+D:\Projects\SwarajInsurancePortal\SwarajInsurancePortalBL\obj\Debug\SwarajInsurancePortalBL.pdb

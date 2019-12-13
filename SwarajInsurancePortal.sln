@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwarajInsurancePortal", "SwarajInsurancePortal\SwarajInsurancePortal.csproj", "{6853ACC9-2ACA-414A-AD59-6D7D727D63E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwarajInsurancePortalBL", "SwarajInsurancePortalBL\SwarajInsurancePortalBL.csproj", "{92F57386-4D0D-48A6-8F71-00C95421F323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwarajInsurancePortalBO", "SwarajInsurancePortalBO\SwarajInsurancePortalBO.csproj", "{7277B232-DAF0-4C32-AC4B-4D87E2F31188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwarajInsurancePortalDA", "SwarajInsurancePortalDA\SwarajInsurancePortalDA.csproj", "{50BDE556-4A7A-4962-BDDD-06E3EC98224E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6853ACC9-2ACA-414A-AD59-6D7D727D63E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6853ACC9-2ACA-414A-AD59-6D7D727D63E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6853ACC9-2ACA-414A-AD59-6D7D727D63E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6853ACC9-2ACA-414A-AD59-6D7D727D63E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F57386-4D0D-48A6-8F71-00C95421F323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F57386-4D0D-48A6-8F71-00C95421F323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F57386-4D0D-48A6-8F71-00C95421F323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F57386-4D0D-48A6-8F71-00C95421F323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7277B232-DAF0-4C32-AC4B-4D87E2F31188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7277B232-DAF0-4C32-AC4B-4D87E2F31188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7277B232-DAF0-4C32-AC4B-4D87E2F31188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7277B232-DAF0-4C32-AC4B-4D87E2F31188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BDE556-4A7A-4962-BDDD-06E3EC98224E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BDE556-4A7A-4962-BDDD-06E3EC98224E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BDE556-4A7A-4962-BDDD-06E3EC98224E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BDE556-4A7A-4962-BDDD-06E3EC98224E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {970DDEB8-E5B4-4DAD-A9E1-C9BCFA105AE8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.8.18.43:8080/tfs/dotnet
+		SccProjectUniqueName0 = SwarajInsurancePortal\\SwarajInsurancePortal.csproj
+		SccProjectName0 = SwarajInsurancePortal
+		SccLocalPath0 = SwarajInsurancePortal
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = SwarajInsurancePortalBL\\SwarajInsurancePortalBL.csproj
+		SccProjectName2 = SwarajInsurancePortalBL
+		SccLocalPath2 = SwarajInsurancePortalBL
+		SccProjectUniqueName3 = SwarajInsurancePortalBO\\SwarajInsurancePortalBO.csproj
+		SccProjectName3 = SwarajInsurancePortalBO
+		SccLocalPath3 = SwarajInsurancePortalBO
+		SccProjectUniqueName4 = SwarajInsurancePortalDA\\SwarajInsurancePortalDA.csproj
+		SccProjectName4 = SwarajInsurancePortalDA
+		SccLocalPath4 = SwarajInsurancePortalDA
+	EndGlobalSection
+EndGlobal
