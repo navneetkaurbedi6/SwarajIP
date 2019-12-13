@@ -38,3 +38,17 @@ steps:
   inputs:
     SearchPattern: '**\bin\**\*.pdb'
   continueOnError: true
+
+- task: CopyFiles@1
+  displayName: 'Copy Files to: $(build.artifactsstagingdirectory'
+  inputs:
+   SourceFolder: '($build.sourcesdirectory)'
+   Contents: '**/*.dll'
+   TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
+  
+- task : PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+   PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
