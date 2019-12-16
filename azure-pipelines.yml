@@ -38,3 +38,5 @@ steps:
   inputs:
     SearchPattern: '**\bin\**\*.pdb'
   continueOnError: true
+
+ 
